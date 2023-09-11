@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-label>Se connecter</ion-label>
+  <div class="background-container">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" >
+      <ion-item lines="full">
+        <ion-label position="floating">E-mail</ion-label>
+        <ion-input type="text" formControlName="email" required></ion-input>
+      </ion-item>
+      <ion-item lines="full">
+        <ion-label position="floating">Mot de passe</ion-label>
+        <ion-input
+          type="password"
+          formControlName="password"
+          required
+        ></ion-input>
+      </ion-item>
+      <ion-button type="submit" expand="block" name="Se Connecter">
+        Se connecter
+      </ion-button>
+      <div>
+        <p><a href="/signup"> S'inscrire</a></p>
+      </div>
+    </form>
+  </div>
+</ion-content>

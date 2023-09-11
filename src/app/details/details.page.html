@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/login" text="Retour" style="color: red">
+        Retour
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title>Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <h3>
+    <strong> {{pzToken}} </strong>
+
+    <ion-list *ngFor="let pizza of pizzasList">
+      <ion-card *ngIf="pizza.id === pzToken;">
+        <ion-img src="{{pizza.imgUrl}}"></ion-img>
+      </ion-card>
+      <ion-label *ngIf="pizza.id === pzToken;"> {{pizza.description}} </ion-label>
+      <br>
+      <ion-label *ngIf="pizza.id === pzToken">Prix: {{pizza.prix}} FCFA</ion-label>
+    </ion-list>
+  </h3>
+</ion-content>

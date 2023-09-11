@@ -1,0 +1,148 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home" text="Retour" style="color: red;">
+        Retour
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title>Produits</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <strong>Pizza Margherita</strong>
+    </ion-card-header>
+    <ion-card-content>
+      <img src="../../assets/icon/pizza1.jpg">
+      <br>
+      <strong>Une délicieuse pizza classique avec de la sauce tomate, de la mozzarella et du basilic.</strong>
+      <br>
+      <strong>Disponible en magasin</strong>
+      <br>
+      <ion-button (click)="go_details('Pizza Margherita')">
+        Details
+      </ion-button>
+      <ion-button href="/detail-commande" >
+        Commander
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <strong>Pizza Pepperoni</strong>
+    </ion-card-header>
+    <ion-card-content>
+      <img src="../../assets/icon/pizza2.jpg">
+      <br>
+      <strong>Une pizza garnie de pepperoni épicé et de fromage fondant.</strong>
+      <br>
+      <strong>Disponible en magasin</strong>
+      <br>
+      <ion-button (click)="go_details('Pizza Pepperoni')">
+        Details
+      </ion-button>
+      <ion-button href="/detail-commande" >
+        Commander
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <strong>Pizza Végétarienne</strong>
+    </ion-card-header>
+    <ion-card-content>
+      <img src="../../assets/icon/pizza3.jpg">
+      <br>
+      <strong>Une pizza chargée de légumes frais comme les poivrons, les champignons et les olives.</strong>
+      <br>
+      <strong>Disponible en magasin</strong>
+      <br>
+      <ion-button (click)="go_details('Pizza Végétarienne')">
+        Details
+      </ion-button>
+      <br>
+      <ion-button href="/detail-commande" >
+        Commander
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <strong>Pizza Hawaïenne</strong>
+    </ion-card-header>
+    <ion-card-content>
+      <img src="../../assets/icon/pizza4.jpg">
+      <br>
+      <strong>La controversée pizza hawaïenne avec du jambon et de l'ananas.</strong>
+      <br>
+      <strong>Disponible en magasin</strong>
+      <br>
+      <ion-button (click)="go_details('Pizza Hawaïenne')">
+        Details
+      </ion-button>
+      <ion-button href="/detail-commande" >
+        Commander
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <strong>Pizza Quatre Fromages</strong>
+    </ion-card-header>
+    <ion-card-content>
+      <img src="../../assets/icon/pizza5.jpg">
+      <br>
+      <strong>Une combinaison savoureuse de quatre fromages différents sur une pâte croustillante.</strong>
+      <br>
+      <strong>Disponible en magasin</strong>
+      <br>
+      <ion-button (click)="go_details('Pizza Quatre Fromages')">
+        Details
+      </ion-button>
+      <ion-button href="/detail-commande" >
+        Commander
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <strong>Pizza Calzone</strong>
+    </ion-card-header>
+    <ion-card-content>
+      <img src="../../assets/icon/pizza6.jpg">
+      <br>
+      <strong>Une pizza repliée en demi-lune, remplie de vos garnitures préférées.</strong>
+      <br>
+      <strong>Disponible en magasin</strong>
+      <br>
+      <ion-button (click)="go_details('Pizza Calzone')">
+        Details
+      </ion-button>
+      <ion-button href="/detail-commande" >
+        Commander
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <strong>Pizza Méditerranéenne</strong>
+    </ion-card-header>
+    <ion-card-content>
+      <img src="../../assets/icon/pizza7.jpg">
+      <br>
+      <strong>Inspirée des saveurs méditerranéennes avec des olives, de la feta et des légumes grillés.</strong>
+      <br>
+      <strong>Disponible en magasin</strong>
+      <br>
+      <ion-button (click)="go_details('Pizza Méditerranéenne')">
+        Details
+      </ion-button>
+      <ion-button href="/detail-commande" >
+        Commander
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

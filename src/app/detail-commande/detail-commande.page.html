@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/produit" text="Retour" style="color: red">
+        Retour
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title>Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-label>Commander un pizza</ion-label>
+  <div class="background-container">
+    <form [formGroup]="commandForm" (ngSubmit)="AddCommand()" >
+      <ion-item lines="full">
+        <ion-label position="floating" >Votre nom</ion-label>
+        <ion-input type="text" formControlName="nom" required></ion-input>
+      </ion-item>
+      <ion-item lines="full">
+        <ion-label position="floating">Nombre de pizza à commander</ion-label>
+        <ion-input
+          type="number"
+          formControlName="nombre"
+          required
+        ></ion-input>
+      </ion-item>
+      <ion-item lines="full">
+        <ion-label position="floating">Adresse de livraison</ion-label>
+        <ion-input
+          type="text"
+          formControlName="adresse"
+          required
+        ></ion-input>
+      </ion-item>
+      <ion-button type="submit" expand="block" name="Commander">
+        Commander
+      </ion-button>
+    </form>
+  </div>
+</ion-content>
